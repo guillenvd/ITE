@@ -19,12 +19,9 @@ public class informacion extends AppCompatActivity {
         setContentView(R.layout.informacion);
         ActionBar actionBar = getSupportActionBar(); //  getActionBar();
         getSupportActionBar().setTitle("Instituto Tecnológico"); // set the top title
-        getSupportActionBar().setSubtitle("Informacióooon");
+        getSupportActionBar().setSubtitle("Información");
       /* actionBar.hide();  or even hide the actionbar
         */
-
-
-
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {

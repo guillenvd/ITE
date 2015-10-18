@@ -1,6 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_marginTop="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginLeft="15dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                    android:id="@+id/uniNombre"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/u_nombre"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
 
-</LinearLayout>
+                    />
+
+                <TextView
+                    android:id="@+id/MisionTitulo"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mision_titulo"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_below="@id/uniNombre"
+                    />
+                <TextView
+                    android:id="@+id/Mision"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mision"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_below="@id/MisionTitulo"
+                    />
+
+                <TextView
+                    android:id="@+id/VisionTitulo"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vision_titulo"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_below="@id/Mision"
+                    />
+                <TextView
+                    android:id="@+id/Vision"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vision"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_below="@id/VisionTitulo"
+                    />
+
+                <TextView
+                    android:id="@+id/ObjetivoTitulo"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/objetivo_titulo"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_below="@id/Vision"
+                    />
+                <TextView
+                    android:id="@+id/Objetivo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/objetivo"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_below="@id/ObjetivoTitulo"
+                    />
+
+
+                <TextView
+                    android:id="@+id/TelefonosTitulo"
+                    android:text="@string/telefono_titulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Objetivo"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/Telefonos"
+                    android:text="@string/telefono"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/TelefonosTitulo"
+                    android:layout_alignParentLeft="true"
+                    />
+                <TextView
+                    android:id="@+id/Direccion"
+                    android:text="@string/direcion_titulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Telefonos"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/DireccionFull"
+                    android:text="@string/direccion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Direccion"
+                    android:layout_alignParentLeft="true"
+                    />
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:text="@string/lema"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@id/DireccionFull"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:textStyle="italic|bold"
+                    />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

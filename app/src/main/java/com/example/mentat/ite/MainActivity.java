@@ -47,14 +47,16 @@ public class MainActivity extends AppCompatActivity {
        */
         switch (v.getId()) {
             case R.id.informacion:
-                Intent intent =  new Intent(getApplicationContext(), informacion.class);
-                    startActivity(intent);
+                    Intent informacionView =  new Intent(getApplicationContext(), informacion.class);
+                    startActivity(informacionView);
                 break;
             case R.id.calificaciones:
                 break;
             case R.id.horario:
                 break;
             case R.id.feed:
+                    Intent feedView =  new Intent(getApplicationContext(), feeds.class);
+                    startActivity(feedView);
                 break;
             case R.id.noticias:
                 break;

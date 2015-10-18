@@ -1,5 +1,18 @@
 <resources>
     <string name="app_name">Instituto Tecnológico</string>
+    <string name="u_nombre">Instituto Tecnológico de Ensenada.</string>
     <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Hello world!</string>
+    <string name="mision_titulo">Misión:</string>
+    <string name="vision_titulo">Visión:</string>
+    <string name="objetivo_titulo">Objetivo:</string>
+    <string name="direcion_titulo">Direción:</string>
+    <string name="lema_titulo">Lema:</string>
+    <string name="telefono_titulo">Telefono(s):</string>
+    <string name="mision">“Ser una institución de educación superior tecnológica promotora del cambio social mediante la formación pertinente y equitativa de profesionistas con calidad integral”.</string>
+    <string name="vision">“Ser una institución líder en educación superior tecnológica, pilar del desarrollo sostenido, sustentable y equitativo de la región”.</string>
+    <string name="objetivo">“Proporcionar un Servicio Educativo de Calidad, orientado a la satisfacción de sus estudiantes”.</string>
+    <string name="lema">“Por la tecnológia del hoy y del futuro”</string>
+    <string name="direccion">Boulevard Tecnológico No. 150 Col. Ex Ejido Chapultepec C.P. 22750</string>
+    <string name="telefono">(646) 1775680, 78 y 82 </string>
 </resources>

@@ -18,6 +18,8 @@
 
         <activity android:name=".informacion">
         </activity>
+        <activity android:name=".feeds">
+        </activity>
     </application>
 
 </manifest>
