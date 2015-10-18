@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
        // v.getId();
        /*
         Switch - Case to catch onCliks of the menu, when the click is detected, onClickMenu catch the view clicked
-        and in to the switch we take the id of then view.
+        and in to the switch we take the id of the view.
         When the id enter in once case then we call the view (Layout) and load this.
        */
         switch (v.getId()) {
