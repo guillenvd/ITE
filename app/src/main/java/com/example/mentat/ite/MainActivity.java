@@ -37,13 +37,11 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
     public void onClickMenu(View v){
-       // v.getId();directorio
-       /* Context context = getApplicationContext();
-        int duration = Toast.LENGTH_SHORT;
-        CharSequence text = "";
-        setTitle(text);
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
+       // v.getId();
+       /*
+        Switch - Case to catch onCliks of the menu, when the click is detected, onClickMenu catch the view clicked
+        and in to the switch we take the id of then view.
+        When the id enter in once case then we call the view (Layout) and load this.
        */
         switch (v.getId()) {
             case R.id.informacion:
