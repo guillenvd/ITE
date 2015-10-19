@@ -1,19 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.mentat.ite" >
-
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="myapp.permission.MAPS_RECEIVE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-library android:name="com.google.android.maps"/>
+    <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyCS1CpXTyTeY0cE2WmmijseV5kXvggstzo"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashScreen"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity">
         </activity>
 
         <activity android:name=".informacion">
@@ -21,5 +32,5 @@
         <activity android:name=".feeds">
         </activity>
     </application>
-
+<!-- AIzaSyCS1CpXTyTeY0cE2WmmijseV5kXvggstzo -->
 </manifest>

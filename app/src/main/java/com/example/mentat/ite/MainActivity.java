@@ -3,11 +3,13 @@ package com.example.mentat.ite;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
+    private static final String TAG = MainActivity.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,18 +45,21 @@ public class MainActivity extends AppCompatActivity {
         and in to the switch we take the id of the view.
         When the id enter in once case then we call the view (Layout) and load this.
        */
+        Log.d(TAG, "*********** View Touched are "+v.getId()+ "*********** ");
+    Intent intent;
         switch (v.getId()) {
             case R.id.informacion:
-                    Intent informacionView =  new Intent(getApplicationContext(), informacion.class);
-                    startActivity(informacionView);
+                    intent =  new Intent(this, informacion.class);
+                    startActivity(intent);
                 break;
             case R.id.calificaciones:
                 break;
             case R.id.horario:
                 break;
             case R.id.feed:
-                    Intent feedView =  new Intent(getApplicationContext(), feeds.class);
-                    startActivity(feedView);
+                Log.d(TAG, "Feeds Option touched");
+                intent =  new Intent(this, feeds.class);
+                startActivity(intent);
                 break;
             case R.id.noticias:
                 break;

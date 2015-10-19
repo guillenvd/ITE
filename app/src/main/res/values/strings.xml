@@ -1,4 +1,5 @@
 <resources>
+    <string name="google_maps_key" templateMergeStrategy="preserve">AIzaSyCS1CpXTyTeY0cE2WmmijseV5kXvggstzo</string>
     <string name="app_name">Instituto Tecnológico</string>
     <string name="u_nombre">Instituto Tecnológico de Ensenada.</string>
     <string name="hello_world">Hello world!</string>
