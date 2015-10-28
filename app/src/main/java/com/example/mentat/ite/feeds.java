@@ -67,6 +67,11 @@ public class feeds extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String Slecteditem= itemname[+position];
+                /*
+                    Intent intent = new Intent(this, FeedText.class);
+                    intent.putExtra("FEED_ID", feedId);
+                    startActivity(intent)
+                */
                 Toast.makeText(getApplicationContext(), Slecteditem, Toast.LENGTH_SHORT).show();
             }
         });
@@ -81,8 +86,7 @@ public class feeds extends AppCompatActivity {
     }
 
     public boolean onOptionsItemSelected(MenuItem item){
-        Intent intent =  new Intent(getApplicationContext(), MainActivity.class);
-        startActivity(intent);
+        this.finish();
         return true;
     }
 

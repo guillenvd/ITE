@@ -31,8 +31,7 @@ public class informacion extends AppCompatActivity {
     }
 
     public boolean onOptionsItemSelected(MenuItem item){
-        Intent intent =  new Intent(getApplicationContext(), MainActivity.class);
-        startActivity(intent);
+        this.finish();
         return true;
     }
 
