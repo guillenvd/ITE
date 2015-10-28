@@ -57,9 +57,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.horario:
                 break;
             case R.id.feed:
-                Log.d(TAG, "Feeds Option touched");
-                intent =  new Intent(this, feeds.class);
-                startActivity(intent);
+                    Log.d(TAG, "Feeds Option touched");
+                    intent =  new Intent(this, feeds.class);
+                    startActivity(intent);
                 break;
             case R.id.noticias:
                 break;
