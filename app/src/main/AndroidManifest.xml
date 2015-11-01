@@ -42,6 +42,12 @@
 
         <activity android:name=".mapaIte">
         </activity>
+
+        <activity android:name=".horario">
+        </activity>
+
+        <activity android:name=".calificaciones">
+        </activity>
     </application>
 <!-- AIzaSyCS1CpXTyTeY0cE2WmmijseV5kXvggstzo -->
 </manifest>

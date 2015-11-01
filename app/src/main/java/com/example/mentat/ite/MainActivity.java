@@ -46,18 +46,21 @@ public class MainActivity extends AppCompatActivity {
         When the id enter in once case then we call the view (Layout) and load this.
        */
         Log.d(TAG, "*********** View Touched are "+v.getId()+ "*********** ");
-    Intent intent;
+        Intent intent;
         switch (v.getId()) {
             case R.id.informacion:
                     intent =  new Intent(this, informacion.class);
                     startActivity(intent);
                 break;
             case R.id.calificaciones:
+                intent =  new Intent(this, calificaciones.class);
+                startActivity(intent);
                 break;
             case R.id.horario:
+                intent =  new Intent(this, horario.class);
+                startActivity(intent);
                 break;
             case R.id.feed:
-                    Log.d(TAG, "Feeds Option touched");
                     intent =  new Intent(this, feeds.class);
                     startActivity(intent);
                 break;

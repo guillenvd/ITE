@@ -1,7 +1,10 @@
 package com.example.mentat.ite;
 
+import android.content.Context;
 import android.graphics.Color;
 import android.location.Location;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -63,13 +66,13 @@ public class mapaIte  extends AppCompatActivity implements GoogleApiClient.Conne
                 setUpIteMarket();
                 return true;
             case R.id.llegar:
-                Location location = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
-                if (location == null) {
-                    Toast.makeText(getApplicationContext(),"No se pudo encontrar su ubicación",Toast.LENGTH_SHORT).show();
-                }
-                else {
-                    onGoIte();
-                }
+                    Location location = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
+                    if (location == null) {
+                        Toast.makeText(getApplicationContext(),"No se pudo encontrar su ubicación",Toast.LENGTH_SHORT).show();
+                    }
+                    else {
+                        onGoIte();
+                    }
                 return true;
             case R.id.regresar:
                 this.finish();
@@ -82,10 +85,25 @@ public class mapaIte  extends AppCompatActivity implements GoogleApiClient.Conne
 
     public void onGoIte(){
         Location location = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
-        handleNewLocation(location);
-        String url = getMapsApiDirectionsUrl();
-        ReadTask downloadTask = new ReadTask();
-        downloadTask.execute(url);
+        if (location  != null && isConnected(getApplicationContext())) {
+            handleNewLocation(location);
+            String url = getMapsApiDirectionsUrl();
+            ReadTask downloadTask = new ReadTask();
+            downloadTask.execute(url);
+        }
+        else{
+            Toast.makeText(getApplicationContext(),"Verifique su conexión a internet",Toast.LENGTH_SHORT).show();
+        }
+
+    }
+
+
+    public  boolean isConnected(Context context) {
+        ConnectivityManager cm = (ConnectivityManager) context
+                .getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
+
+        return activeNetwork != null && activeNetwork.isConnectedOrConnecting();
     }
 
     public void setUpIteMarket(){
@@ -109,14 +127,11 @@ public class mapaIte  extends AppCompatActivity implements GoogleApiClient.Conne
         markerList.clear();
         mMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
         LatLng latLng = new LatLng(location.getLatitude(), location.getLongitude());
-
         marker= mMap.addMarker(new MarkerOptions().position(ITE).title("Instituto Tecnológico  de Ensenada."));
         markerList.add(marker);
-
         marker =  mMap.addMarker(new MarkerOptions().position(latLng).title("Usted se encuentra Aquí"));
         marker.showInfoWindow();
         markerList.add(marker);
-
         CameraUpdate yourLocation = CameraUpdateFactory.newLatLngZoom(latLng, zoomLevel);
         mMap.animateCamera(yourLocation);
 
