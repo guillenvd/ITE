@@ -68,9 +68,15 @@ public class feeds extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String Slecteditem= itemname[+position];
                 /*
-                    Intent intent = new Intent(this, FeedText.class);
+                  Intent intent = new Intent(this, FeedText.class);
                     intent.putExtra("FEED_ID", feedId);
                     startActivity(intent)
+
+                  // in FeedText Activity
+                    Bundle extras = getIntent().getExtras();
+                        if (extras != null) {
+                            String someVariable = extras.getString("someVariable");
+                          }
                 */
                 Toast.makeText(getApplicationContext(), Slecteditem, Toast.LENGTH_SHORT).show();
             }

@@ -11,7 +11,7 @@
 
         <TableLayout
             xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/tableHora"
+            android:id="@+id/tableCal"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_marginTop="10dp"
@@ -99,7 +99,7 @@
 
                 <TextView
                     android:id="@+id/TextView31"
-                    android:text="GPO."
+                    android:text="01"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:textStyle="bold"
@@ -110,7 +110,7 @@
 
                 <TextView
                     android:id="@+id/TextView32"
-                    android:text="Lunes"
+                    android:text="02"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:textStyle="bold"
@@ -123,7 +123,7 @@
                     android:id="@+id/TextView33"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:text="Martes"
+                    android:text="03"
                     android:textStyle="bold"
                     android:typeface="serif"
                     android:padding="5dp"
@@ -134,7 +134,7 @@
                     android:id="@+id/TextView34"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:text="Miercoles"
+                    android:text="04"
                     android:textStyle="bold"
                     android:typeface="serif"
                     android:padding="5dp"
@@ -145,7 +145,7 @@
                     android:id="@+id/TextView35"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:text="Jueves"
+                    android:text="05"
                     android:textStyle="bold"
                     android:typeface="serif"
                     android:padding="5dp"
@@ -156,7 +156,7 @@
                     android:id="@+id/TextView36"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:text="Viernes"
+                    android:text="06"
                     android:textStyle="bold"
                     android:typeface="serif"
                     android:padding="5dp"
@@ -167,7 +167,7 @@
                     android:id="@+id/TextView37"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:text="Sabado"
+                    android:text="07"
                     android:textStyle="bold"
                     android:typeface="serif"
                     android:padding="5dp"
@@ -196,7 +196,7 @@
                     android:background="@drawable/cell_shape"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:text="7SA"
+                    android:text="85"
                     android:padding="5dp"
                     android:gravity="center_horizontal"/>
 
@@ -205,7 +205,7 @@
                     android:background="@drawable/cell_shape"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:text=""
+                    android:text="85"
                     android:padding="5dp"
                     android:gravity="center_horizontal"/>
 
@@ -214,7 +214,7 @@
                     android:background="@drawable/cell_shape"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:text="15:00-16:00 213"
+                    android:text="82"
                     android:padding="5dp"
                     android:gravity="center_horizontal"/>
 
@@ -223,7 +223,7 @@
                     android:background="@drawable/cell_shape"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:text="17:00-19:00 LC1"
+                    android:text="72"
                     android:padding="5dp"
                     android:gravity="center_horizontal"/>
 
@@ -232,7 +232,7 @@
                     android:background="@drawable/cell_shape"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:text="18:00-20:00 LC1"
+                    android:text="75"
                     android:padding="5dp"
                     android:gravity="center_horizontal"/>
 
@@ -241,7 +241,7 @@
                     android:background="@drawable/cell_shape"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:text=""
+                    android:text="83"
                     android:padding="5dp"
                     android:gravity="center_horizontal"/>
 
@@ -250,16 +250,7 @@
                     android:background="@drawable/cell_shape"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:text=""
-                    android:padding="5dp"
-                    android:gravity="center_horizontal"/>
-
-                <TextView
-                    android:id="@+id/textView48"
-                    android:background="@drawable/cell_shape"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:text=""
+                    android:text="90"
                     android:padding="5dp"
                     android:gravity="center_horizontal"/>
             </TableRow>
@@ -284,7 +275,7 @@
                     android:background="@drawable/cell_shape"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:text="7SA"
+                    android:text="85"
                     android:padding="5dp"
                     android:gravity="center_horizontal"/>
 
@@ -293,7 +284,7 @@
                     android:background="@drawable/cell_shape"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:text=""
+                    android:text="85"
                     android:padding="5dp"
                     android:gravity="center_horizontal"/>
 
@@ -302,7 +293,7 @@
                     android:background="@drawable/cell_shape"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:text="16:00-18:00 LE1"
+                    android:text="90"
                     android:padding="5dp"
                     android:gravity="center_horizontal"/>
 
@@ -311,7 +302,7 @@
                     android:background="@drawable/cell_shape"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:text=""
+                    android:text="100"
                     android:padding="5dp"
                     android:gravity="center_horizontal"/>
 
@@ -320,7 +311,7 @@
                     android:background="@drawable/cell_shape"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:text=""
+                    android:text="100"
                     android:padding="5dp"
                     android:gravity="center_horizontal"/>
 
@@ -329,7 +320,7 @@
                     android:background="@drawable/cell_shape"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:text="16:00-18:00 LC4"
+                    android:text="100"
                     android:padding="5dp"
                     android:gravity="center_horizontal"/>
 
@@ -338,19 +329,11 @@
                     android:background="@drawable/cell_shape"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:text=""
+                    android:text="95"
                     android:padding="5dp"
                     android:gravity="center_horizontal"/>
 
-                <TextView
-                    android:id="@+id/textView58"
-                    android:background="@drawable/cell_shape"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:text=""
-                    android:padding="5dp"
-                    android:gravity="center_horizontal"/>
-            </TableRow>
+                </TableRow>
 
             <TableRow
                 android:id="@+id/tableRow6"
@@ -372,7 +355,7 @@
                     android:background="@drawable/cell_shape"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:text="7SA"
+                    android:text="100"
                     android:padding="5dp"
                     android:gravity="center_horizontal"/>
 
@@ -381,7 +364,7 @@
                     android:background="@drawable/cell_shape"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:text="16:00-18:00 106"
+                    android:text="100"
                     android:padding="5dp"
                     android:gravity="center_horizontal"/>
 
@@ -390,7 +373,7 @@
                     android:background="@drawable/cell_shape"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:text=""
+                    android:text="100"
                     android:padding="5dp"
                     android:gravity="center_horizontal"/>
 
@@ -399,7 +382,7 @@
                     android:background="@drawable/cell_shape"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:text="19:00-21:00 LC4"
+                    android:text="100"
                     android:padding="5dp"
                     android:gravity="center_horizontal"/>
 
@@ -430,15 +413,7 @@
                     android:padding="5dp"
                     android:gravity="center_horizontal"/>
 
-                <TextView
-                    android:id="@+id/textView68"
-                    android:background="@drawable/cell_shape"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:text=""
-                    android:padding="5dp"
-                    android:gravity="center_horizontal"/>
-            </TableRow>
+                </TableRow>
 
             <TableRow
                 android:id="@+id/tableRow7"
@@ -460,7 +435,7 @@
                     android:background="@drawable/cell_shape"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:text="7SA"
+                    android:text="100"
                     android:padding="5dp"
                     android:gravity="center_horizontal"/>
 
@@ -469,7 +444,7 @@
                     android:background="@drawable/cell_shape"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:text=""
+                    android:text="100"
                     android:padding="5dp"
                     android:gravity="center_horizontal"/>
 
@@ -478,7 +453,7 @@
                     android:background="@drawable/cell_shape"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:text="19:00-21:00 106"
+                    android:text="100"
                     android:padding="5dp"
                     android:gravity="center_horizontal"/>
 
@@ -487,7 +462,7 @@
                     android:background="@drawable/cell_shape"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:text=""
+                    android:text="100"
                     android:padding="5dp"
                     android:gravity="center_horizontal"/>
 
@@ -496,7 +471,7 @@
                     android:background="@drawable/cell_shape"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:text=""
+                    android:text="100"
                     android:padding="5dp"
                     android:gravity="center_horizontal"/>
 
@@ -505,7 +480,7 @@
                     android:background="@drawable/cell_shape"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:text="18:00-20:00 LC4"
+                    android:text="100"
                     android:padding="5dp"
                     android:gravity="center_horizontal"/>
 
@@ -514,18 +489,10 @@
                     android:background="@drawable/cell_shape"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:text=""
+                    android:text="100"
                     android:padding="5dp"
                     android:gravity="center_horizontal"/>
 
-                <TextView
-                    android:id="@+id/textView78"
-                    android:background="@drawable/cell_shape"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:text=""
-                    android:padding="5dp"
-                    android:gravity="center_horizontal"/>
             </TableRow>
 
             <TableRow
@@ -548,7 +515,7 @@
                     android:background="@drawable/cell_shape"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:text="7SB"
+                    android:text="100"
                     android:padding="5dp"
                     android:gravity="center_horizontal"/>
 
@@ -557,7 +524,7 @@
                     android:background="@drawable/cell_shape"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:text="18:00-20:00 LC4"
+                    android:text="90"
                     android:padding="5dp"
                     android:gravity="center_horizontal"/>
 
@@ -566,7 +533,7 @@
                     android:background="@drawable/cell_shape"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:text="18:00-19:00 LC4"
+                    android:text="95"
                     android:padding="5dp"
                     android:gravity="center_horizontal"/>
 
@@ -575,7 +542,7 @@
                     android:background="@drawable/cell_shape"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:text=""
+                    android:text="95"
                     android:padding="5dp"
                     android:gravity="center_horizontal"/>
 
@@ -584,7 +551,7 @@
                     android:background="@drawable/cell_shape"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:text="16:00-17:00 106"
+                    android:text="100"
                     android:padding="5dp"
                     android:gravity="center_horizontal"/>
 
@@ -606,14 +573,6 @@
                     android:padding="5dp"
                     android:gravity="center_horizontal"/>
 
-                <TextView
-                    android:id="@+id/textView88"
-                    android:background="@drawable/cell_shape"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:text=""
-                    android:padding="5dp"
-                    android:gravity="center_horizontal"/>
             </TableRow>
 
 
