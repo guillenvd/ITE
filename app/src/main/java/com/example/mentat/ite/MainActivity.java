@@ -71,6 +71,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
             case R.id.directorio:
+                intent = new Intent(this, Directory.class);
+                startActivity(intent);
                 break;
             case R.id.actividades:
                 intent = new Intent(this, Directory.class);
