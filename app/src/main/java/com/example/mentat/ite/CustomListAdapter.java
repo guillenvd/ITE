@@ -16,7 +16,6 @@ public class CustomListAdapter extends ArrayAdapter<String> {
     public CustomListAdapter(Activity context, String[] itemname, Integer[] imgid) {
         super(context, R.layout.feed_list, itemname);
         // TODO Auto-generated constructor stub
-
         this.context=context;
         this.itemname=itemname;
         this.imgid=imgid;
@@ -30,12 +29,10 @@ public class CustomListAdapter extends ArrayAdapter<String> {
         ImageView imageView = (ImageView) rowView.findViewById(R.id.icon);
         TextView extraTxt = (TextView) rowView.findViewById(R.id.textView1);
         TextView textDate = (TextView) rowView.findViewById(R.id.textDate);
-
         txtTitle.setText(itemname[position]);
         imageView.setImageResource(imgid[position]);
         extraTxt.setText("Titulo.");
         textDate.setText("00/00/0000 hh:ii");
-
         return rowView;
     }
 }
