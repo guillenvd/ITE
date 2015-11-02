@@ -15,4 +15,5 @@
     <string name="lema">“Por la tecnológia del hoy y del futuro”</string>
     <string name="direccion">Boulevard Tecnológico No. 150 Col. Ex Ejido Chapultepec C.P. 22750</string>
     <string name="telefono">(646) 1775680, 78 y 82 </string>
+    <string name="content_description">content description</string>
 </resources>

@@ -48,6 +48,11 @@
 
         <activity android:name=".calificaciones">
         </activity>
+
+        <activity
+            android:name=".Directory"
+            android:theme="@style/DirectoryTheme"
+            android:parentActivityName=".MainActivity"></activity>
     </application>
 <!-- AIzaSyCS1CpXTyTeY0cE2WmmijseV5kXvggstzo -->
 </manifest>
